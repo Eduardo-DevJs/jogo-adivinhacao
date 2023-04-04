@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header container">
+      <h1 class="header-tempo">JogoDaAdivinhacao</h1>
+      <div class="tempo">
+        <h1 class="header-tempo">Tempo: <span class="temporizador">30</span></h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="modal">
+    <div class="header-modal">
+      <h2>Errou</h2>
+      <button type="button" class="close-modal">X</button>
+    </div>
+    <h1 class="game-over">GAMER OVER</h1>
+  </div>
+
+  <main class="main-bg">
+    <div class="jogo container">
+      <h1 class="titulo-jogo">Acerte o Número</h1>
+      <div class="dica">
+        <h2 class="dica-texto">Dica</h2>
+      </div>
+      <div class="form">
+        <label for="numero">Digite um numero entre 1 e 100</label>
+        <input id="numero" type="number">
+        <button class="stop-timer" onclick="pararTempo()">Parar o tempo</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
